@@ -1,0 +1,26 @@
+package mypractice;
+
+public class LinearSearch {
+
+	public static void main(String[] args) {
+		int arr[] = {9, 6, 0, 7, 2};
+		int key=4;
+		int result = linearSearch( arr, key );
+		if(result==-1) {
+			System.out.println("Result not found");
+		}else {
+			System.out.println("Result found at: " + result);
+		}
+		
+	}
+	public static int linearSearch(int arr[], int key) {
+		for(int i=0; i<arr.length;i++) {
+			if(arr[i]==key) {
+				return i;
+			}
+			
+		}
+		return -1;
+	}
+
+}
