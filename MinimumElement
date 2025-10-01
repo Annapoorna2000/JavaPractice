@@ -1,0 +1,18 @@
+public class Main {
+  public static void main(String[] args) {
+    
+    // Finding minimum element 
+    
+    int a[] = {1, 2, 3, 4, 5, -6, 3};
+    
+    int minValue = Integer.MAX_VALUE;
+    
+    for(int i = 0; i < a.length; i++){
+    	if(a[i] < minValue){
+        	minValue = a[i];
+        }
+    }
+    
+    System.out.println(minValue);
+  }
+}
